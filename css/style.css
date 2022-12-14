@@ -16,6 +16,15 @@ body {
   letter-spacing: 0.02em;
 }
 
+a {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.visibility {
+display: none;
+}
+
 .list {
   padding: 0;
   margin: 0;
@@ -45,6 +54,7 @@ body {
 .page-header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border: 1px solid #000000;
 }
 
 .site-nav .link {
@@ -88,18 +98,30 @@ body {
 
 .hero {
   background: var(--title-text-color);
+  text-align: center;
 }
 
+
+
 .hero-title {
+  
+  /* width: 492px; */
   color: var(--hero-text-color);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+  
+  
   margin-top: 0;
   margin-bottom: 48px;
+  
   outline: 2px solid rgb(165, 0, 0);
 }
+
+/* .hero-title-container {
+  width: 492px;
+  text-align: center;
+} */
 
 .button {
   display: inline-block;
@@ -167,9 +189,6 @@ title {
   margin-bottom: 0;
 }
 
-
-
-
 /* team */
 
 .name-title {
@@ -187,10 +206,15 @@ title {
   font-size: 16px;
   line-height: 1.5;
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 0;
 }
 
 /* portfolio */
+
+.portfolio-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .button-portfolio {
   display: inline-block;
@@ -220,8 +244,26 @@ title {
   border: 1px solid var(--accent-color);
 }
 
+.cards {
+  margin-top: 72px;
+}
+
 .cards-link {
+  margin-top: 0;
+  margin-bottom: 0;
   text-decoration: none;
+  /* outline: 2px solid rgb(165, 0, 0); */
+  /* border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08); */
+}
+
+.list-border {
+  border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  margin-bottom: 48px;
+  width: 360px;
 }
 
 .cards-title {
@@ -229,8 +271,9 @@ title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  /* outline: 2px solid rgb(165, 0, 0); */
 }
 
 .cards-text {
@@ -241,6 +284,7 @@ title {
   letter-spacing: 0.02em;
   margin-top: 0;
   margin-bottom: 0;
+  /* outline: 2px solid rgb(165, 0, 0); */
 }
 
 .sorting-text {
@@ -248,7 +292,12 @@ title {
   font-size: 16px;
   line-height: 1.5;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 32px;
+  /* outline: 2px solid rgb(165, 0, 0); */
+}
+
+.cards-text-conteiner {
+  padding-left: 16px;
 }
 
 /* footter */
@@ -260,10 +309,9 @@ title {
 }
 
 .logo-end {
-  
   color: var(--light-background-color);
   font-family: 'Raleway';
-  
+
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -280,7 +328,7 @@ title {
 
 .end-text {
   color: var(--corn-text-color);
-  
+  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   margin-top: 16px;
@@ -292,12 +340,35 @@ title {
   margin-right: auto;
   width: 1128px;
   outline: 2px solid rgb(165, 0, 0);
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
   outline: 2px solid rgb(165, 0, 0);
+}
+
+.section.team {
+  background-color: var(--light-background-color);
+}
+
+.list-team {
+  background-color: var(--hero-text-color);
+  width: 264px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
+padding-bottom: 32px;
+text-align: center;
+}
+
+.section.portfolio {
+  padding-top: 96px;
+}
+
+.benefits-text-container {
+  width: 264px;
 
 }
 
@@ -305,5 +376,4 @@ title {
 
 .section.what-we-do {
   padding-top: 0;
-
 }
