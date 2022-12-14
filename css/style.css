@@ -42,6 +42,11 @@ body {
 
 /* Site nav */
 
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 700;
@@ -92,7 +97,7 @@ body {
   line-height: 1.07;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 48px;
   outline: 2px solid rgb(165, 0, 0);
 }
 
@@ -112,6 +117,7 @@ body {
   cursor: pointer;
   padding: 16px 32px;
   text-align: center;
+  /* margin-bottom: 192px; */
 }
 
 .button:hover,
@@ -137,6 +143,8 @@ button:focus {
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 72px;
 }
 
 .feature-list,
@@ -148,12 +156,19 @@ title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .text {
   font-size: 16px;
   line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
+
+
 
 /* team */
 
@@ -163,12 +178,16 @@ title {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-top: 32;
+  margin-bottom: 8;
 }
 
 .name-text {
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
 /* portfolio */
@@ -210,6 +229,8 @@ title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .cards-text {
@@ -218,21 +239,28 @@ title {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .sorting-text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* footter */
 
 .end {
   background: var(--title-text-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .logo-end {
+  
   color: var(--light-background-color);
   font-family: 'Raleway';
   
@@ -255,15 +283,27 @@ title {
   
   font-size: 16px;
   line-height: 1.5;
+  margin-top: 16px;
+  margin-bottom: 0;
 }
 
 .container {
+  margin-left: auto;
+  margin-right: auto;
   width: 1128px;
+  outline: 2px solid rgb(165, 0, 0);
 }
 
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
   outline: 2px solid rgb(165, 0, 0);
+
+}
+
+/* Work */
+
+.section.what-we-do {
+  padding-top: 0;
 
 }
