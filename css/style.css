@@ -5,6 +5,8 @@
   --hero-text-color: #ffffff;
   --light-background-color: #f4f4fd;
   --corn-text-color: #e7e9fc;
+  --card-set-gap-left: 24px;
+  --card-set-gap-top: 48px;
 }
 
 body {
@@ -20,6 +22,12 @@ a {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} 
 
 .visibility {
   display: none;
@@ -127,7 +135,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .hero-title {
-  /* justify-content: center; */
   width: 492px;
   color: var(--hero-text-color);
   font-weight: 700;
@@ -138,7 +145,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   margin-top: 0;
   margin-bottom: 48px;
 
-  /* outline: 2px solid rgb(165, 0, 0); */
+  
 }
 
 
@@ -159,7 +166,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   cursor: pointer;
   padding: 16px 32px;
   text-align: center;
-  /* margin-bottom: 192px; */
+  
 }
 
 .button:hover,
@@ -291,6 +298,7 @@ title {
 .sorting {
   display: flex;
   justify-content: center;
+  margin-bottom: 72px;
 }
 
 .sorting .sorting-btn + .sorting-btn {
@@ -298,43 +306,50 @@ title {
 }
 
 .cards {
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 72px;
+  
+
+  margin-left: calc(-1 * var(--card-set-gap-left));
+  margin-top: calc(-1 * var(--card-set-gap-top));
+  
 }
 
-/* .cards .list-border + .list-border {
-  margin-left: 24px;
-} */
+
 
 .cards-link {
   margin-top: 0;
   margin-bottom: 0;
   text-decoration: none;
-  /* outline: 2px solid rgb(165, 0, 0); */
-  /* border: 0.5px solid #f4f4fd;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08); */
+  
+}
+
+
+
+.cards > .list-border {
+  flex-basis: calc(100% / 3 - var(--card-set-gap-left));
+
+  margin-left: var(--card-set-gap-left);
+  margin-top: var(--card-set-gap-top);
+  
 }
 
 .list-border {
-  margin-right: 24px;
-  margin-bottom: 48px;
-  width: 360px;
-
   border: 0.5px solid #F4F4FD;
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 
 
-.list-border:nth-child(3n) {
+/* .list-border:nth-child(3n) {
   margin-right: 0;
 }
 
 .list-border:nth-last-child(-n+3) {
   margin-bottom: 0;
-}
+} */
 
 .cards-title {
   color: var(--title-text-color);
@@ -343,7 +358,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   line-height: 1.2;
   margin-top: 32px;
   margin-bottom: 8px;
-  /* outline: 2px solid rgb(165, 0, 0); */
 }
 
 .cards-text {
@@ -354,7 +368,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   letter-spacing: 0.02em;
   margin-top: 0;
   margin-bottom: 0;
-  /* outline: 2px solid rgb(165, 0, 0); */
 }
 
 .sorting-text {
@@ -363,7 +376,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 32px;
-  /* outline: 2px solid rgb(165, 0, 0); */
 }
 
 .cards-text-conteiner {
@@ -409,25 +421,19 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   margin-left: auto;
   margin-right: auto;
   width: 1128px;
-  /* outline: 2px solid rgb(165, 0, 0); */
-  /* padding-left: 20px;
-  padding-right: 20px; */
+ 
 }
 
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
-  /* outline: 2px solid rgb(165, 0, 0); */
 }
 
 .section.team {
   background-color: var(--light-background-color);
 }
 
-.list-border {
-  border: 0.5px solid #F4F4FD;
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
+
 
 .list-team {
   background-color: var(--hero-text-color);
